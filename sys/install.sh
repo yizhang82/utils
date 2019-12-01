@@ -8,6 +8,7 @@ sudo apt install autoconf cmake lldb bison
 
 # Libraries
 sudo apt install libevent-dev libboost-system-dev libboost-filesystem-dev libboost-chrono-dev libboost-test-dev libboost-thread-dev libssl-dev libzstd-dev libncurses5-dev libreadline-dev
+sudo apt install libsqlite3-dev
 
 # Languages
 sudo apt install golang rustc python
