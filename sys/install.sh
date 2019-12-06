@@ -1,7 +1,8 @@
 #!/bin/sh
 
 # System
-sudo apt install tlp -y
+sudo apt install tlp powerstat -y
+sudo apt install qemu -y
 
 # Developer Tools
 sudo apt install autoconf cmake lldb bison -y
