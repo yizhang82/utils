@@ -1,17 +1,20 @@
-#!/bin/sh
+#!/bin/bash
 
 # System
-sudo apt install tlp powerstat -y
-sudo apt install qemu -y
+if [[ -z "$WSLENV" ]]; then
+  # Only install following for native linux (not WSL)
+  sudo apt install tlp powerstat -y
+  sudo apt install qemu -y
+fi
 
 # Developer Tools
 sudo apt install make -y
 sudo apt install autoconf cmake lldb bison -y
+sudo apt install clang -y
 
 # Libraries
 sudo apt install libevent-dev libboost-system-dev libboost-filesystem-dev libboost-chrono-dev libboost-test-dev libboost-thread-dev libssl-dev libzstd-dev libncurses5-dev libreadline-dev -y
 sudo apt install libsqlite3-dev -y
-sudo apt install clang -y
 
 # Languages
 sudo apt install golang rustc python -y

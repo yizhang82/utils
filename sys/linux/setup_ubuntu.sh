@@ -1,7 +1,5 @@
 #!/bin/sh
+# Setup scripts for linux environments
 
-# Setup scripts
-
-./config.sh
 ./install.sh
-./setup_git_keyring_libsecret.sh
+./setup_git.sh
