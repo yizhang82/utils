@@ -1,6 +1,7 @@
 #!/bin/bash
 
 # System
+sudo apt-get install sysstat -y
 if [[ -z "$WSLENV" ]]; then
   # Only install following for native linux (not WSL)
   sudo apt install tlp powerstat -y
