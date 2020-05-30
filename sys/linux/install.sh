@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# Ensure apt database is up-to-date
+sudo apt update
+
 # System
 sudo apt-get install sysstat -y
 if [[ -z "$WSLENV" ]]; then
