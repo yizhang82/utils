@@ -8,6 +8,7 @@ echo "Configuring git..."
 git config --global user.email "yizhang82@outlook.com"
 git config --global user.name "Yi Zhang"
 git config --global core.excludesfile '~/.gitignore_global'
+git config --global diff.tool 'vimdiff'
 echo "__build" >> ~/.gitignore_global
 
 # Setting up git credentials
