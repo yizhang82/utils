@@ -41,6 +41,7 @@ echo "========================================"
 echo "Installing languages..."
 echo "========================================"
 install_pkg golang rustc cargo python
+install_pkg ruby-dev ruby-devel
 
 # Utilities
 echo "========================================"
