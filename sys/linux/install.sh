@@ -28,13 +28,18 @@ echo "========================================"
 
 install_pkg make autoconf cmake lldb bison
 install_pkg gcc clang gdb lldb
+install_pkg mosh
 
 # Libraries
 echo "========================================"
-echo "Installing developer utilities"
+echo "Installing development libraries"
 echo "========================================"
-install_pkg libevent-dev libboost-system-dev libboost-filesystem-dev libboost-chrono-dev libboost-test-dev libboost-thread-dev libssl-dev libzstd-dev libncurses5-dev libreadline-dev
+install_pkg libevent-dev libboost-system-dev libboost-filesystem-dev libboost-chrono-dev libboost-test-dev libboost-thread-dev libzstd-dev libreadline-dev
 install_pkg libsqlite3-dev
+install_pkg libssl-dev openssl-devel
+install_pkg libncurses5-dev ncurses-devel
+install_pkg libtirpc-devel
+install_pkg rpcgen
 
 # Languages
 echo "========================================"
