@@ -40,6 +40,8 @@ install_pkg libssl-dev openssl-devel
 install_pkg libncurses5-dev ncurses-devel
 install_pkg libtirpc-devel
 install_pkg rpcgen
+install_pkg flex bison
+install_pkg libcap-dev
 
 # Languages
 echo "========================================"
@@ -53,6 +55,8 @@ echo "========================================"
 echo "Installing utilities..."
 echo "========================================"
 install_pkg curl silversearcher-ag pkg-config
+install_pkg sysstat
+install_pkg linux-tools-$(uname -r) linux-cloud-tools-$(uname -r)
 
 # Docker
 echo "========================================"
